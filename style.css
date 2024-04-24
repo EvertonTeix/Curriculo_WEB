@@ -1,0 +1,206 @@
+.container {
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle, #0067D4, #002F62);
+    max-width: auto;
+}
+
+body {
+    margin: 0;
+    background-color: #4140403f;
+}
+
+.perfil {
+    flex: 0 0 auto;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.perfil img {
+    border-radius: 50%;
+    max-width: 20%;
+    border: 3px solid #fff;
+}
+
+.infos {
+    flex: 1;
+    align-items: center;
+    margin-left: -50%;
+}
+
+.infos div {
+    margin-left: 25%;
+}
+
+.infos h1 {
+    color: #ffffff;
+    font-family: 'Red Hat Display';
+    font-size: 5rem;
+    margin-bottom: 5%;
+}
+
+.infos img {
+    align-items: center;
+    margin-right: 5%;
+}
+
+.infos .git,
+.infos .email,
+.infos .tel {
+    width: 5%;
+    height: auto;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    background-color: rgb(79, 74, 74);
+    color: #fff;
+    padding-top: 7%;
+    z-index: 1000;
+    transition: right 0.4s ease;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Red Hat Display';
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul,
+nav ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.214);
+    border-radius: 15px;
+}
+
+#content {
+    margin-right: 200px;
+    transition: margin-right 0.3s ease;
+}
+
+nav ul li a.active {
+    background-color: #555;
+}
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+}
+
+nav.collapsed {
+    right: -200px;
+}
+
+#content.collapsed {
+    margin-right: 0;
+}
+
+.sections {
+    color: #000;
+    font-size: 25px;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: 'Montserrat';
+}
+
+.sections .MoneyM {
+    color: #000;
+}
+
+.sections p,
+.sections li {
+    line-height: 1.5;
+    text-indent: 1em;
+    text-align: justify;
+}
+
+.sections h2 {
+    color: rgb(79, 74, 74);
+    font-display: center;
+    font-family: 'Red Hat Display';
+    border-bottom: 1px solid black;
+}
+
+.sections .subtext {
+    text-align: right;
+    font-size: 18px;
+    margin-left: 15%;
+}
+
+@media (max-width: 600px) {
+    .container {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+        text-align: center;
+    }
+
+    .perfil img {
+        max-width: 60%;
+        margin-top: 10%;
+        margin-right: 7%;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    nav {
+        padding-top: 20%;
+        color: #000000;
+    }
+
+    .sections {
+        font-size: 18px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .sections .subtext {
+        font-size: 14px;
+        margin-left: 10%;
+    }
+
+    .infos {
+        margin-left: 0%;
+        margin-bottom: 20px;
+    }
+
+    .infos div {
+        margin-left: 4%;
+    }
+
+    .infos h1 {
+        font-size: 3rem;
+    }
+
+    .infos img {
+        margin-right: 5%;
+    }
+}
